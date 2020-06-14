@@ -7,7 +7,7 @@
   "license": "AGPL-3.0",
   "scripts": {
     "dev": "nodemon --exec sucrase-node ./src/server.js",
-    "start": "yarn sucrase-node ./src/server.js",
+    "prod": "yarn sucrase-node ./src/server.js",
     "migrate": "yarn sequelize db:migrate",
     "undo": "yarn sequelize db:migrate:undo",
     "undo:all": "yarn sequelize db:migrate:undo:all"
