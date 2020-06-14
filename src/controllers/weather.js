@@ -45,7 +45,7 @@ const getWeather = async (req, res, next) => {
       cloudiness: data.clouds.all,
       windSpeed: data.wind.speed,
       windDeg: data.wind.deg,
-      rainLastHour: data.rain['1h'],
+      rainLastHour: data.rain ? data.rain['1h'] : null,
     });
 
     res.locals.data = weather;
