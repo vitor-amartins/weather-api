@@ -28,7 +28,7 @@ const getWeather = async (req, res, next) => {
       lon: longitude,
       appid: process.env.OPEN_WEATHER_API_KEY,
       units: 'metric',
-      lang: 'pt_br',
+      // lang: 'pt_br',
     };
 
     const { data } = await axios.get('https://api.openweathermap.org/data/2.5/weather', { params });

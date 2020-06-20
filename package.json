@@ -10,7 +10,9 @@
     "prod": "yarn sucrase-node ./src/server.js",
     "migrate": "yarn sequelize db:migrate",
     "undo": "yarn sequelize db:migrate:undo",
-    "undo:all": "yarn sequelize db:migrate:undo:all"
+    "undo:all": "yarn sequelize db:migrate:undo:all",
+    "dokku:add": "git remote add dokku dokku@18.231.171.3:weather",
+    "dokku:push": "git push dokku master"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
